@@ -1,6 +1,303 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);.navbar-laravel {
-  background-color: #fff;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.2;
+}
+
+.note {
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  color: #424242;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 2;
+}
+
+.homePage {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 7;
+}
+
+.support-text {
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: 1;
+}
+
+.support-text__content {
+  grid-column-start: 3;
+  grid-column-end: 7;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  background: red;
+}
+
+.footer {
+  margin: 30px 0;
+  padding: 10px;
+  border-top: 1px solid #f5f5f5;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 2;
+  -webkit-box-shadow: 0 -7px 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -7px 14px rgba(0, 0, 0, 0.1);
+}
+
+.footer__socials {
+  justify-self: end;
+}
+
+.footer__copyright {
+  justify-self: end;
+}
+
+.social-share--footer {
+  margin: 10px 0;
+}
+
+.social-share__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.social-share__item {
+  margin-right: 10px;
+}
+
+.social-share__link {
+  border-radius: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  display: block;
+}
+
+.social-share--footer .social-share__link {
+  border: 1px solid #424242;
+  color: #424242;
+  background-color: #f5f5f5;
+}
+
+.social-share--footer .social-share__link:hover {
+  background-color: #e8e8e8;
+  border: 1px solid #8f8e8e;
+}
+
+.nav--footer {
+  margin: 10px 0;
+}
+
+.nav--footer .nav__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav--footer .nav__item {
+  margin-right: 10px;
+}
+
+.nav__nav-link {
+  text-decoration: none;
+}
+
+.nav--footer .nav__nav-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  margin-right: 7px;
+  color: #424242;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.nav--footer .nav__nav-link:hover {
+  color: #8f8e8e;
+}
+
+.copyright--footer {
+  margin: 5px 0;
+}
+
+.support-text {
+  margin: 30px 0;
+}
+
+.support-text__content--center {
+  text-align: center;
+}
+
+.support-text__title {
+  margin-bottom: 20px;
+}
+
+.support-text__paragraph {
+  margin-bottom: 10px;
 }
 

@@ -1,0 +1,27 @@
+.nav
+  &--footer
+    margin: $main-space 0
+
+  // ul element
+  &__list-item
+    .nav--footer &
+      display: flex
+
+  // li element
+  &__item
+    .nav--footer &
+      margin-right: 10px
+
+  // a element
+  &__nav-link
+    text-decoration: none
+    
+    .nav--footer &
+      display: flex
+      font-size: 14px
+      margin-right: 7px
+      color: $dark-gray
+      +transition(all 0.3s ease)
+
+      &:hover
+        color: lighten( $dark-gray, 30% )

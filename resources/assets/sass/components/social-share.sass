@@ -1,0 +1,28 @@
+.social-share
+  &--footer
+    margin: $main-space 0
+
+  &__list
+    display: flex
+  
+  &__item
+    margin-right: 10px
+
+  &__link
+    +border-radius(100%)
+    +transition(all 0.3s ease)
+    width: 45px
+    height: 45px
+    text-align: center
+    line-height: 45px
+    display: block
+
+    // footer version
+    .social-share--footer &
+      border: 1px solid $dark-gray
+      color: $dark-gray
+      background-color: $light-gray
+
+      &:hover
+        background-color: darken( $light-gray, 5% )
+        border: 1px solid lighten( $dark-gray, 30% )
