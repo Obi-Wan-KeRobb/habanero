@@ -1,0 +1,53 @@
+@keyframes mouse-scroll
+  0%
+    opacity: 0
+  50%
+    opacity: 0.5
+  100%
+    opacity: 1
+
+@keyframes mouse-wheel
+  0%
+    opacity: 1
+    +transform(translateY(0))
+
+  100%
+    opacity: 1
+    +transform(translateY(6px))
+
+.mouse-scroll
+  width: 16px
+  height: 30px
+  z-index: 3
+
+  &__mouse
+    height: 22px
+    width: 14px
+    border: 1px solid rgba(255,255,255,.8)
+    border-radius: 10px
+
+  &__wheel
+    position: relative
+    display: block
+    height: 3px
+    width: 3px
+    margin: 2px auto 0
+    background: rgba(255,255,255,.8)
+    border-radius: 50%
+    +animation(mouse-wheel 1.2s ease infinite)
+
+  &__arrow
+    display: block
+    width: 5px
+    height: 5px
+    border-right: 1px solid rgba(255,255,255,.8)
+    border-bottom: 1px solid rgba(255,255,255,.8)
+    margin: 0 0 2px 5px
+    +transform(rotate(45deg))
+    +animation(mouse-scroll 1s infinite)
+    -webkit-animation-direction: alternate
+    animation-direction: alternate
+
+    @for $i from 1 through 3
+      &--#{$i}
+        animation-delay:(#{$i*0.1s})

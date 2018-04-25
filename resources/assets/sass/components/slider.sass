@@ -1,0 +1,52 @@
+@keyframes slide
+  0%
+    left: 0
+  20%
+    left: 0
+
+  25%
+    left: -100%
+  45%
+    left: -100%
+
+  50%
+    left: -200%
+  70%
+    left: -200%
+
+  80%
+    left: -300%
+  100%
+    left: -300%
+  
+.slider
+  min-height: 100vh
+  overflow: hidden
+  position: relative
+
+  &__slides
+    width: 400%
+    position: relative
+    display: flex
+    flex-flow: row
+    white-space: nowrap
+    +animation(slide 30s infinite alternate)
+
+  &__slide
+    width: 25%
+    height: 100%
+    position: relative
+    overflow: hidden
+
+
+  &__background
+    +min-screen(1025px)
+      max-height: 100%
+    
+    +max-screen(1024px)
+      height: 100vh
+      
+    +max-screen(768px)
+      height: 100vh
+      position: relative
+      left: -50%
