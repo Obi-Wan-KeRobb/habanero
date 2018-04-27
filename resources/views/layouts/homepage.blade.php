@@ -40,7 +40,12 @@
     <!-- showcase piatti section -->
     <div class="homePage__showcase-food">
       <div class="showcase-slider">
-        inserisco qui il contenuto
+        carousel
+        <div class="owl-carousel" id="showcase-food">
+          @for ($i = 1; $i <= 4; $i++)
+            @include('components.showcase-slider')
+          @endfor
+        </div>
       </div>
     </div>
 

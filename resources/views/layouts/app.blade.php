@@ -22,5 +22,7 @@
           @include('components.footer')
         </footer>
       </div>
+
+      <script src="js/app.js"></script>
     </body>
 </html>

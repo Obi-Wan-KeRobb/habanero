@@ -13,6 +13,9 @@ let mix = require('laravel-mix');
 
 mix.js('resources/assets/js/app.js', 'public/js')
    .sass('resources/assets/sass/app.sass', 'public/css')
+   .autoload({
+        jquery: ['$', 'window.jQuery', 'jQuery']
+    })
    .browserSync({
         proxy: 'http://127.0.0.1:8000'
     });
