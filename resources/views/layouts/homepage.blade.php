@@ -20,48 +20,28 @@
         <div class="hero-image__sliders">
           <div class="slider">
             <div class="slider__slides">
-              <!-- single slide -->
-              <div class="slider__slide">
-                <img src="{{ asset("storage/images/homePage/mainvisual01.jpg") }}" alt="" class="slider__background">
-              </div>
 
-              <!-- single slide -->
-              <div class="slider__slide">
-                <img src="{{ asset("storage/images/homePage/mainvisual02.jpg") }}" alt="" class="slider__background">
-              </div>
-
-              <!-- single slide -->
-              <div class="slider__slide">
-                <img src="{{ asset("storage/images/homePage/mainvisual03.jpg") }}" alt="" class="slider__background">
-              </div>
-
-              <!-- single slide -->
-              <div class="slider__slide">
-                <img src="{{ asset("storage/images/homePage/mainvisual04.jpg") }}" alt="" class="slider__background">
-              </div>
+              @for ($i = 1; $i <= 4; $i++)
+                <!-- single slide -->
+                <div class="slider__slide">
+                  <img src='{{ asset("storage/images/homePage/mainvisual0" . $i . ".jpg") }}' alt="" class="slider__background">
+                </div>
+              @endfor
             </div>
           </div>
         </div>
 
         <div class="hero-image__scroll">
-          <div class="mouse-scroll">
-            <div class="mouse-scroll mouse-scroll__mouse">
-              <div class="mouse-scroll__wheel"></div>
-            </div>
-          </div>
-
-          <div class="mouse-scroll__arrows">
-            <span class="mouse-scroll__arrow mouse-scroll__arrow--1"></span>
-            <span class="mouse-scroll__arrow mouse-scroll__arrow--2"></span>
-            <span class="mouse-scroll__arrow mouse-scroll__arrow--3"></span>
-          </div>
+          @include('components.mouse-scroll')
         </div>
       </div>
     </div>
 
     <!-- showcase piatti section -->
     <div class="homePage__showcase-food">
-      <div class="showcase-slider">showcase slider component</div>
+      <div class="showcase-slider">
+        inserisco qui il contenuto
+      </div>
     </div>
 
     <!-- ingredients section -->
