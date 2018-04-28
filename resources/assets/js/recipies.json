@@ -1,0 +1,6 @@
+[
+  {"label": "Secondo piatto", "recipe": "Pan seared Foie Gras served with rhubarb puréed",                "src": "pan-seared"},
+  {"label": "Primo piatto",   "recipe": "Carpaccio di spada su letto di zucchine aromatizzate all’aneto", "src": "carpaccio-spada"},
+  {"label": "Primo piatto",   "recipe": "Polpo saltato su croccante di patate",                           "src": "polpo-saltato"},
+  {"label": "dolce",          "recipe": "Barchetta di crema al mascarpone e nocciola",                    "src": "barchetta-mascarpone"}
+]
