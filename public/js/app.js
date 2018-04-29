@@ -10456,7 +10456,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 __webpack_provided_window_dot_jQuery = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 window.$ = __WEBPACK_IMPORTED_MODULE_0_jquery___default.a;
 
-// import './owl.carousel/dist/assets/owl.carousel.css';
 
 
 console.log("main js");
@@ -10465,6 +10464,8 @@ $('#showcase-food').owlCarousel({
     loop: true,
     margin: 10,
     nav: true,
+    navText: ["<div class='carousel-back'></div>", "<div class='carousel-next'></div>"],
+    //   autoplay: true,
     responsive: {
         0: {
             items: 1

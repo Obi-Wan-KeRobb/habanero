@@ -1,4 +1,4 @@
-@keyframes slide
+@keyframes slide-hero
   0%
     left: 0
   20%
@@ -18,35 +18,75 @@
     left: -300%
   100%
     left: -300%
+
+@keyframes slide-place
+  0%
+    left: 0
+  30%
+    left: 0
+
+  35%
+    left: -100%
+  65%
+    left: -100%
+
+  70%
+    left: -200%
+  100%
+    left: -200%
   
 .slider
-  min-height: 100vh
   overflow: hidden
   position: relative
 
+  &--hero
+    min-height: 100vh
+
+  &--place
+    max-height: 340px
+
+    +min-screen(1025px)
+      max-height: 400px
+
   &__slides
-    width: 400%
     position: relative
     display: flex
     flex-flow: row
     white-space: nowrap
-    +animation(slide 30s infinite alternate)
+
+    .slider--hero &
+      width: 400%
+      +animation(slide-hero 30s infinite alternate)
+
+    .slider--place &
+      width: 300%
+      +animation(slide-place 20s infinite alternate)
 
   &__slide
-    width: 25%
     height: 100%
     position: relative
     overflow: hidden
 
+    .slider--hero &
+      width: 25%
+
+    .slider--place &
+      width: calc(100% / 3)
+
 
   &__background
-    +min-screen(1025px)
-      max-height: 100%
     
-    +max-screen(1024px)
-      height: 100vh
+    .slider--hero &
+      +min-screen(1025px)
+        max-height: 100%
       
-    +max-screen(768px)
-      height: 100vh
-      position: relative
-      left: -50%
+      +max-screen(1024px)
+        height: 100vh
+        
+      +max-screen(768px)
+        height: 100vh
+        position: relative
+        left: -50%
+
+    .slider--place &
+      max-width: 100%

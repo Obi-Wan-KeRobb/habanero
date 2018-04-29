@@ -2,7 +2,6 @@ import jquery from 'jquery';
 window.jQuery = jquery;
 window.$ = jquery;
 
-// import './owl.carousel/dist/assets/owl.carousel.css';
 import owlCarousel from 'owl.carousel';
 
 console.log("main js")
@@ -11,6 +10,8 @@ $('#showcase-food').owlCarousel({
   loop:true,
   margin:10,
   nav:true,
+  navText: ["<div class='carousel-back'></div>","<div class='carousel-next'></div>"],
+//   autoplay: true,
   responsive:{
       0:{
           items:1

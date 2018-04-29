@@ -6,7 +6,7 @@
     <div class="homePage__hero">
       <div class="hero-image">
         <div class="hero-image__strip">
-          <div class="strip">
+          <div class="strip strip--hero">
             <div class="strip__image">
               <img class="strip__logo-picture" src="{{ asset("storage/images/shared/logotipo-negative.png") }}" alt="habanero logo" title="habanero">
             </div>
@@ -18,7 +18,7 @@
         </div>
 
         <div class="hero-image__sliders">
-          <div class="slider">
+          <div class="slider slider--hero">
             <div class="slider__slides">
 
               @for ($i = 1; $i <= 4; $i++)
@@ -39,12 +39,11 @@
 
     <!-- showcase piatti section -->
     <div class="homePage__showcase-food">
-      <div class="showcase-slider">
-        carousel
+      <div class="showcase-carousel">
         <div class="owl-carousel" id="showcase-food">
-          @for ($i = 1; $i <= 4; $i++)
-            @include('components.showcase-slider')
-          @endfor
+          @foreach ($recipes as $recipe) 
+            @include('components.showcase-slider', ['recipe' => $recipe])
+          @endforeach
         </div>
       </div>
     </div>
@@ -63,12 +62,75 @@
 
     <!-- restaurant background section -->
     <div class="homePage__background-restaurant">
-      <div class="background-restaurant"> background-restaurant component</div>
+      <div class="background-restaurant">
+        <!-- strip -->
+        <div class="strip strip--place">
+          <div class="strip__text">
+            <strong>TIVOLI</strong> - Antica città latina, nata prima di Roma e sede di due pratimoni dell’umanità è la cornice perfetta per il viaggio culinario a voi proposto
+          </div>
+        </div>
+
+        <div class="slider slider--place">
+          <div class="slider__slides">
+
+            @for ($i = 1; $i <= 3; $i++)
+              <!-- single slide -->
+              <div class="slider__slide">
+                <img src='{{ asset("storage/images/place/tivoli-0" . $i . ".jpg") }}' alt="" class="slider__background">
+              </div>
+            @endfor
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- menu section -->
     <div class="homePage__menu">
-      <div class="menu">component menu</div>
+      <div class="menu">
+        <div class="menu__introdution">
+          <div class="support-text">
+            <div class="support-text__content support-text__content--center">
+              <h3 class="support-text__title">Menu</h3>
+              <p class="support-text__paragraph">Il nostro menu ha due scelte, da una parte la voglia di <strong>scoprire</strong> la proposta del nostro chef, <strong>piatti ricercati</strong>, <strong>eleganti</strong> nel presentarsi, composti da pochi ingredienti, <strong>ricchi di sapore</strong>, dall’antipasto al dolce per una scelta variegata che accontenta i vari palati.</p>
+              <p class="support-text__paragraph">Dall’altra uno dei piatti gastronomici più conosciuti al mondo, la <strong>pizza</strong>. Il nostro mastro pizzaiolo, propone le <strong>classiche</strong> pizze, quelle per cui la pizza è stata conosciuta nel mondo, insieme a <strong>nuove proposte</strong>, per creare un connubbio perfetto tra tradizionale e nuovo e soddisfare sia i clienti tradizionalisti sia chi vuole sperimentare qualcosa di particolare su base tradizionale.</p>
+              <p class="support-text__paragraph">Ultimo e aspetto non meno importante è la nostra carta dei <strong>vini</strong> e delle <strong>birre</strong>. Una serie di bevande di <strong>origine italiana</strong>, di diversa provenienza per garantire un <strong>perfetto accompagnamento</strong> ai piatti scelti.</p>
+              <p class="support-text__paragraph">Noi dello Nome ristorante saremo al <strong>vostro fianco</strong> per <strong>consigliarvi</strong> cosa si adegua maggiormente alle vostre richieste e fugare i vostri dubbi.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu__choose">
+          <div class="menu__choose-column restaurant">
+            
+            <div class="menu__image-wrapper">
+              <div class="menu__picture">
+                <a href="" class="menu__link-to">
+                  <img class="menu__image" src="{{ asset("storage/images/menu/restaurant.jpg") }}" alt="Guarda il menu ristorante">
+                </a>
+              </div>
+              <div class="menu__cta">
+                <a href="" class="menu__link-to">Guarda il menu ristorante ></a>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="menu__choose-column pizzeria">
+            <div class="menu__image-wrapper">
+                <div class="menu__picture">
+                  <a href="" class="menu__link-to">
+                    <img class="menu__image" src="{{ asset("storage/images/menu/pizzeria.jpg") }}" alt="Guarda il menu ristorante">
+                  </a>
+                </div>
+                <div class="menu__cta">
+                  <a href="" class="menu__link-to">Guarda il menu pizzeria ></a>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+      </div>
     </div>
 
     <!-- intollerance section -->

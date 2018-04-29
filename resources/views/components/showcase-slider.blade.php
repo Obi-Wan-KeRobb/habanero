@@ -1,12 +1,15 @@
-<div class="showcase-slider">
-
+<div class="carousel">
   <!-- container text part -->
-  <div class="showcase-slider__support-text">
-    <h3>etichetta</h3>
-    <p>descrizione</p>
+  <div class="carousel__support-text">
+    <div class="carousel__header">
+      {{$recipe->label}}
+    </div>
+    <div class="carousel__description">
+      {{$recipe->recipe}}
+    </div>
   </div>
   <!-- background -->
-  <div class="showcase-slider__background">
-    fantastic image
+  <div class="carousel__background">
+    <img src='{{asset('storage/images/showcase/'.$recipe->src_img.'.jpg')}}' alt="{{$recipe->recipe}}" class="showcase-slider__image">
   </div>
 </div>
