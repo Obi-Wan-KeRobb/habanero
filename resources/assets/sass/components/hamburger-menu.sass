@@ -1,0 +1,83 @@
+@mixin icon($height, $width)
+  transition-duration: 0.5s
+  position: absolute
+  height: $height
+  width: $width
+  top: 30px
+  background-color: $light-gray  
+
+@mixin icon-before($height, $width, $top)
+  transition-duration: 0.5s
+  position: absolute
+  width: $width
+  height: $height
+  background-color: $light-gray
+  content: ""
+  top: $top
+
+@mixin icon-after($height, $width, $top)
+  transition-duration: 0.5s
+  position: absolute
+  width: $width
+  height: $height
+  background-color: $light-gray
+  content: ""
+  top: $top
+
+.toggler
+  position: fixed
+  width: 60px
+  height: 60px
+  top: 10px
+  right: 10px
+  transition-duration: 0.5s
+  z-index: 4
+
+  &__icon-left
+    @include icon(2px, 15px)
+    left: 0px 
+    
+    &:before
+      @include icon-before(2px, 15px, -10px)
+    
+    &:after
+      @include icon-after(2px, 15px, 10px)
+    
+    &:hover
+      cursor: pointer
+
+  &__icon-right
+    @include icon(2px, 15px)
+    left: 15px
+    
+    &:before
+      @include icon-before(2px, 15px, -10px)
+    
+    &:after
+      @include icon-after(2px, 15px, 10px)
+
+  .navigation-open &
+    .toggler__icon-left
+      transition-duration: 0.5s
+      background: transparent
+      
+      &:before
+        transform: rotateZ(45deg) scaleX(1.4) translate(2px, 2px)
+
+      &:after
+        transform: rotateZ(-45deg) scaleX(1.4) translate(2px, -2px)
+
+    .toggler__icon-right
+      transition-duration: 0.5s
+      background: transparent  
+      
+      &:before
+        transform: rotateZ(-45deg) scaleX(1.4) translate(-2px, 2px)
+
+
+      &:after
+        transform: rotateZ(45deg) scaleX(1.4) translate(-2px, -2px)
+
+      &:hover
+        cursor: pointer
+  
