@@ -146,7 +146,15 @@
 
     <!-- instagram section -->
     <div class="homePage__instagram">
-      <div class="instagram">instagram component</div>
+      <div class="instagram instagram--homePage">
+        @foreach($feedImages as $feed)
+            <div class="instagram__item">
+              <a class="instagram__link" target="_blank" href="{{$feed[1]}}">
+                  <img src="{{$feed[0]}}" alt="Instagram Feed" class="instagram__image">
+              </a>
+            </div>
+        @endforeach
+      </div>
     </div>
   </div>
 @endsection

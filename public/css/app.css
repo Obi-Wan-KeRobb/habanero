@@ -248,6 +248,24 @@ body {
 
 .homePage__background-restaurant {
   position: relative;
+  display: grid;
+  grid-template-columns: repeat(8, 12.5%);
+}
+
+.homePage__background-restaurant .background-restaurant {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
+
+.homePage__instagram {
+  display: grid;
+  grid-template-columns: repeat(16, 6.25%);
+}
+
+.homePage__instagram .instagram {
+  grid-column-start: 2;
+  grid-column-end: 16;
 }
 
 .support-text {
@@ -789,6 +807,7 @@ body {
 
 .slider--place .slider__background {
   max-width: 100%;
+  width: 100%;
 }
 
 .strip {
@@ -1021,5 +1040,23 @@ body {
   padding: 5px 10px;
   height: 20px;
   line-height: 20px;
+}
+
+.instagram--homePage {
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 2;
+}
+
+.instagram__item {
+  padding: 5px;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.instagram__image {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
 }
 
