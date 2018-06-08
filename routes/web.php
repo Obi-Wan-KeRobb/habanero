@@ -12,3 +12,5 @@
 */
 
 Route::get('/', 'HomeController@homePage');
+
+Route::get('/volantino', 'HomeController@volantino');

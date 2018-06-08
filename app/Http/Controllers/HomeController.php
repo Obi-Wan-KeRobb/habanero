@@ -32,4 +32,8 @@ class HomeController extends Controller
             ->with('recipes', $recipes)
             ->with('feedImages', $images);
     }
+
+    public function volantino() {
+        return view('volantino');
+    }
 }
