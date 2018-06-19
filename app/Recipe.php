@@ -12,4 +12,9 @@ class Recipe extends Model
         'recipe',
         'src'
     ];
+
+    public function comments()
+    {
+        return $this->hasMany('App\Ingredient');
+    }
 }

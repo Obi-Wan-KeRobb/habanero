@@ -55,6 +55,11 @@
     display: grid
     grid-template-columns: repeat(8, ( 100% / 8) )
 
+    & > h3
+      grid-column-start: 1
+      grid-column-end: 9
+      text-align: center
+
     .background-restaurant
       position: relative
       grid-column-start: 1

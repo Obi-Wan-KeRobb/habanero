@@ -1,6 +1,34 @@
 [
-  {"label": "Secondo piatto", "recipe": "Pan seared Foie Gras served with rhubarb puréed",                "src": "pan-seared"},
-  {"label": "Primo piatto",   "recipe": "Carpaccio di spada su letto di zucchine aromatizzate all’aneto", "src": "carpaccio-spada"},
-  {"label": "Primo piatto",   "recipe": "Polpo saltato su croccante di patate",                           "src": "polpo-saltato"},
-  {"label": "dolce",          "recipe": "Barchetta di crema al mascarpone e nocciola",                    "src": "barchetta-mascarpone"}
+  {
+    "label": "Secondo piatto", 
+    "recipe": "Pan seared Foie Gras served with rhubarb puréed",                
+    "src": "pan-seared",
+    "ingredients": [
+      "slices foie gras", "rhubarb", "honey", "ap­ple", "grapes", "peeled"
+    ]
+  },
+  {
+    "label": "Primo piatto",   
+    "recipe": "Carpaccio di spada su letto di zucchine aromatizzate all’aneto", 
+    "src": "carpaccio-spada",
+    "ingredients": [
+      "pesce spada", "capperi", "zucchina", "costa di sedano", "limone", "salsa Worcester"
+    ]
+  },
+  {
+    "label": "Primo piatto",   
+    "recipe": "Polpo saltato su croccante di patate",                           
+    "src": "polpo-saltato",
+    "ingredients": [
+      "Polpo", "Farina di mais bianca", "Paprika dolce", "Rosmarino", "Pepe rosa", "scorza Limone"
+    ]
+  },
+  {
+    "label": "dolce",          
+    "recipe": "Barchetta di crema al mascarpone e nocciola",                    
+    "src": "barchetta-mascarpone",
+    "ingredients": [
+      "mascarpone", "crema di nocciola", "farina", "uova", "vanilia"
+    ]
+  }
 ]

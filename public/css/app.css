@@ -252,6 +252,12 @@ body {
   grid-template-columns: repeat(8, 12.5%);
 }
 
+.homePage__background-restaurant > h3 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+  text-align: center;
+}
+
 .homePage__background-restaurant .background-restaurant {
   position: relative;
   grid-column-start: 1;
@@ -578,12 +584,16 @@ nav {
   text-align: center;
   padding-top: 10%;
   opacity: 0;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  display: none;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navigation-open nav {
   opacity: 1;
+  display: block;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .navigation__social {

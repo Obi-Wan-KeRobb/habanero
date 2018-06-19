@@ -48,42 +48,6 @@
       </div>
     </div>
 
-    <!-- ingredients section -->
-    <div class="homePage__ingredients">
-      <div class="support-text">
-        <div class="support-text__content support-text__content--center">
-          <h3 class="support-text__title">Gli ingredienti e la nostra filosofia</h3>
-          <p class="support-text__paragraph">Noi dell'<strong>habanero</strong> siamo convinti che andare a <strong>mangiare</strong> in un ristorante dev’essere un <strong>piacevole viaggio</strong>, che inizia quando si varca la porta d’ingresso e finisce il giorno seguente.</p>
-          <p class="support-text__paragraph">Il nostro menu è composto da una scelta, finalizzata da mesi di prove ed esperimenti tra il tradizionale ed il nuovo, per garantire un’<strong>esperienza culinaria</strong> elegante ma non troppo ricercata, a cui tutti i palati possano accedere, un’interpretazione di ricette che speriamo accompagnino il nostro ospite lungo un viaggio nella piacevole cultura culinaria Italiana, tra <strong>leggerezza</strong> e <strong>gusto</strong></p>
-          <p class="support-text__paragraph">Al fine di seguire questa filosofia, ci imponiamo di usare <strong>ingredienti freschi</strong> e di origine Italiana, perché solo tramite questa scelta possiamo garantire la qualità di quel che viene creato in cucina. Qualità che infine si trasmette nello svegliarsi il giorno dopo con un piacevole ricordo di questo viaggio affrontato insieme.</p>
-        </div>
-      </div>
-    </div>
-
-    <!-- restaurant background section -->
-    <div class="homePage__background-restaurant">
-      <div class="background-restaurant">
-        <!-- strip -->
-        <div class="strip strip--place">
-          <div class="strip__text">
-            <strong>TIVOLI</strong> - Antica città latina, nata prima di Roma e sede di due pratimoni dell’umanità è la cornice perfetta per il viaggio culinario a voi proposto
-          </div>
-        </div>
-
-        <div class="slider slider--place">
-          <div class="slider__slides">
-
-            @for ($i = 1; $i <= 3; $i++)
-              <!-- single slide -->
-              <div class="slider__slide">
-                <img src='{{ asset("storage/images/place/tivoli-0" . $i . ".jpg") }}' alt="" class="slider__background">
-              </div>
-            @endfor
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- menu section -->
     <div class="homePage__menu">
       <div class="menu">
@@ -130,6 +94,43 @@
         </div>
 
 
+      </div>
+    </div>
+
+    <!-- ingredients section -->
+    <div class="homePage__ingredients">
+      <div class="support-text">
+        <div class="support-text__content support-text__content--center">
+          <h3 class="support-text__title">Gli ingredienti e la nostra filosofia</h3>
+          <p class="support-text__paragraph">Noi dell'<strong>habanero</strong> siamo convinti che andare a <strong>mangiare</strong> in un ristorante dev’essere un <strong>piacevole viaggio</strong>, che inizia quando si varca la porta d’ingresso e finisce il giorno seguente.</p>
+          <p class="support-text__paragraph">Il nostro menu è composto da una scelta, finalizzata da mesi di prove ed esperimenti tra il tradizionale ed il nuovo, per garantire un’<strong>esperienza culinaria</strong> elegante ma non troppo ricercata, a cui tutti i palati possano accedere, un’interpretazione di ricette che speriamo accompagnino il nostro ospite lungo un viaggio nella piacevole cultura culinaria Italiana, tra <strong>leggerezza</strong> e <strong>gusto</strong></p>
+          <p class="support-text__paragraph">Al fine di seguire questa filosofia, ci imponiamo di usare <strong>ingredienti freschi</strong> e di origine Italiana, perché solo tramite questa scelta possiamo garantire la qualità di quel che viene creato in cucina. Qualità che infine si trasmette nello svegliarsi il giorno dopo con un piacevole ricordo di questo viaggio affrontato insieme.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- restaurant background section -->
+    <div class="homePage__background-restaurant">
+      <h3 class="support-text__title">La cornice del ristorante</h3>
+      <div class="background-restaurant">
+        <!-- strip -->
+        <div class="strip strip--place">
+          <div class="strip__text">
+            <strong>TIVOLI</strong> - Antica città latina, nata prima di Roma e sede di due pratimoni dell’umanità è la cornice perfetta per il viaggio culinario a voi proposto
+          </div>
+        </div>
+
+        <div class="slider slider--place">
+          <div class="slider__slides">
+
+            @for ($i = 1; $i <= 3; $i++)
+              <!-- single slide -->
+              <div class="slider__slide">
+                <img src='{{ asset("storage/images/place/tivoli-0" . $i . ".jpg") }}' alt="" class="slider__background">
+              </div>
+            @endfor
+          </div>
+        </div>
       </div>
     </div>
 
