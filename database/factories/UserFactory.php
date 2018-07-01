@@ -21,3 +21,17 @@ $factory->define(App\User::class, function (Faker $faker) {
         'remember_token' => str_random(10),
     ];
 });
+
+$factory->define(App\Recipe::class, function (Faker $faker) {
+    return [
+        'label' => $faker->name,
+        'recipe' => $faker->name,
+        'src_img' => str_random(10),
+    ];
+});
+
+$factory->define(App\Ingredient::class, function (Faker $faker) {
+    return [
+        'name_ingredients' => str_random(10),
+    ];
+});

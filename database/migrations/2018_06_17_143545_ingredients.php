@@ -16,8 +16,8 @@ class Ingredients extends Migration
         //
         Schema::create('ingredients', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('recipe_id')->unsigned();
             $table->string('name_ingredients');
+            // $table->integer('recipe_id')->unsigned();
         });
     }
 

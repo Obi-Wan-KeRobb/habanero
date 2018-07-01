@@ -7,8 +7,14 @@ use Illuminate\Database\Eloquent\Model;
 class Ingredient extends Model
 {
     //
-    public function post()
+    public $timestamps = false;
+
+    protected $fillabe = [
+        'recipe_id'
+    ];
+    
+    public function recipe()
     {
-        return $this->belongsTo('App\Recipe');
+        return $this->belongsToMany('App\Recipe');
     }
 }

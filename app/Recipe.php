@@ -13,8 +13,8 @@ class Recipe extends Model
         'src'
     ];
 
-    public function comments()
+    public function ingredients()
     {
-        return $this->hasMany('App\Ingredient');
+        return $this->belongsToMany('App\Ingredient');
     }
 }

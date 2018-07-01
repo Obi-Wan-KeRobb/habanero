@@ -1,7 +1,11 @@
 <?php
 
-use Illuminate\Database\Seeder;
 use App\Recipe;
+use App\Ingredient;
+use Illuminate\Database\Seeder;
+use Tests\TestCase;
+namespace Tests\Feature;
+use Illuminate\Database\Seeder;
 
 class RecipeTableSeeder extends Seeder
 {
@@ -13,16 +17,20 @@ class RecipeTableSeeder extends Seeder
     public function run()
     {
         //
+        // Populate roles
+        factory(Recipe::class, 20)->create();
 
-        DB::table('recipes')->delete();
-        $json = File::get('./resources/assets/js/recipies.json');
-        $data = json_decode($json);
-        foreach ($data as $obj) {
-            Recipe::create(array(
-                'label' => $obj->label,
-                'recipe' => $obj->recipe,
-                'src_img' => $obj->src
-            ));
-        }
+        // Populate users
+        factory(Ingredient::class, 50)->create();
+
+        // Get all the roles attaching up to 3 random roles to each user
+        $roles = Recipe::all();
+
+        // Populate the pivot table
+        Ingredient::all()->each(function ($user) use ($roles) { 
+            $user->roles()->attach(
+                $roles->random(rand(1, 3))->pluck('id')->toArray()
+            ); 
+        });
     }
 }
