@@ -1252,3 +1252,49 @@ nav {
   cursor: pointer;
 }
 
+.menu-list {
+  text-align: center;
+}
+
+.menu-list__serving {
+  margin: 10px 0 30px;
+}
+
+.menu-list__title-wrapper {
+  margin-bottom: 20px;
+}
+
+.menu-list__recipe {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-list__ingredients {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.menu-list__ingredient {
+  font-style: italic;
+}
+
+@media only screen and (max-width: 767px) {
+  .menu-list__ingredient {
+    display: inline-block;
+  }
+}
+
+.menu-list__ingredient:after {
+  display: inline-block;
+  content: ",";
+  margin-right: 5px;
+}
+

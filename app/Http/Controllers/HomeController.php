@@ -12,7 +12,7 @@ class HomeController extends Controller
     //
     public function homePage(){
 
-        $recipes = Recipe::get();
+        $recipes = Recipe::take(4)->get();
         $instagram = new Instagram('2692277519.1677ed0.e95c118b1e204bd888d5e5fe9aaf51bb');
 
         $images = collect($instagram->get())->filter(function ($value, $key) {

@@ -1,0 +1,29 @@
+.menu-list
+  text-align: center
+
+  &__serving
+    margin: 10px 0 30px
+
+  &__title-wrapper
+    margin-bottom: $main-space*2
+
+  &__recipe
+    margin-bottom: $main-space*2
+
+  &__ingredients
+    +min-screen(768px)
+      display: flex
+      align-items: center
+      justify-content: center
+
+  &__ingredient
+    font-style: italic
+
+    +max-screen(767px)
+      display: inline-block
+
+    &:after
+      display: inline-block
+      content: ","
+      margin-right: 5px
+    

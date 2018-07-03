@@ -40,5 +40,257 @@
     "ingredients": [
       "mascarpone", "crema di nocciola", "farina", "uova", "vanilia"
     ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "antipasto", 
+        "recipe": "Ferrero Rocher alla picchiapò su salsa di carciofi alla romana e menta",                
+        "src": "ferrero-rocher"
+      }
+    ],
+    "ingredients": [
+      "carciofi", "menta", "carne bovino"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "antipasto", 
+        "recipe": "tartare di manzo Italiano con pinoli, puntarelle alla romana e spugna di zucca",                
+        "src": "tartare-mano"
+      }
+    ],
+    "ingredients": [
+      "manzo italiano", "olio extravergine", "limone", "pinoli", "puntarelle alla romana", "zucca"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "antipasto", 
+        "recipe": "sfilacciato di coniglio alle prugne accompagnato con caponata alla Siciliana",                
+        "src": "sfilacciato-coniglio"
+      }
+    ],
+    "ingredients": [
+      "coniglio", "prugne", "caponata", "pomodori", "basilico", "olive nere", "capperi sotto sale"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "antipasto", 
+        "recipe": "Prosciutto stagionato 36 mesi Azienda la Fornarina con mozzarella di bufala dop e focaccia",                
+        "src": "prosciutto-36mesi"
+      }
+    ],
+    "ingredients": [
+      "mozzarella di bufala", "prosciutto", "focaccia"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "primo piatto", 
+        "recipe": "Gnocchi verdi alla vignarola con guanciale croccante, fave, piselli, carciofi e fiori di zucca fritti",                
+        "src": "gnocchi-verdi"
+      }
+    ],
+    "ingredients": [
+      "Gnocchi verdi", "guanciale", "fave", "piselli", "carciofi", "fiori di zucca"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "primo piatto", 
+        "recipe": "Ravioli al basilico con ripieno di mozzarella di bufala con pomodorini variegati e basilico rosso",                
+        "src": "ravioli-basilico"
+      }
+    ],
+    "ingredients": [
+      "mozzarella di bufala", "pomodorini", "basilico"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "primo piatto", 
+        "recipe": "Tagliolini con funghi pioppini, noci tostate e fonduta di Roquefort",                
+        "src": "tagliolini-funghi"
+      }
+    ],
+    "ingredients": [
+      "formaggio Roquefort", "noci", "funghi"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "primo piatto", 
+        "recipe": "Tonnarello cacio e pepe con zeste di lime",                
+        "src": "tonnarello-cacio"
+      }
+    ],
+    "ingredients": [
+      "Cacio", "pepe", "lime"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "primo piatto", 
+        "recipe": "Risotto agli asparagi, mousse di stracciatella e polvere di arancia biologica",                
+        "src": "risotto-asparagi"
+      }
+    ],
+    "ingredients": [
+      "stracciatella", "asparagi", "arancia biologica"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "secondo piatto", 
+        "recipe": "Filetto di maiale con patate gratinate, carciofi croccanti e salsa yogurt",                
+        "src": "filetto-maiale"
+      }
+    ],
+    "ingredients": [
+      "patate gratinate", "carciofi croccanti", "yogurt"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "secondo piatto", 
+        "recipe": "Agnello panato con patate viola e carotine baby",                
+        "src": "agnello-panato"
+      }
+    ],
+    "ingredients": [
+      "agnelloe", "patate viola", "carote"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "secondo piatto", 
+        "recipe": "Cacciatora di lepre con cicoria ripassata, salsa all’ uva rossa e purea di pomodorini secchi",                
+        "src": "cacciatora-lepre"
+      }
+    ],
+    "ingredients": [
+      "carne di lepre", "uva rossa", "pomodorini"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "secondo piatto", 
+        "recipe": "Rollè di pollo ripieno con verdurine al vapore, guanciale croccante, spinaci ripassati, e salsa al latte di cocco",                
+        "src": "rolle-pollo"
+      }
+    ],
+    "ingredients": [
+      "pollo", "verdure", "guanciale", "spinaci", "latte di cocco"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "secondo piatto", 
+        "recipe": "Hamburger della casa al piatto con chips di patate e le sue salse ",                
+        "src": "rolle-pollo"
+      }
+    ],
+    "ingredients": [
+      "manzo", "patate"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "contorno", 
+        "recipe": "patate al forno",                
+        "src": "patate-forno"
+      }
+    ],
+    "ingredients": [
+      "patate"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "contorno", 
+        "recipe": "Verdure di stagione agro o ripassate",                
+        "src": "verdure-stagione"
+      }
+    ],
+    "ingredients": [
+      "melanzane", "peperoni", "zucchine"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "dolce", 
+        "recipe": "Tiramisù 2018 in trasparenza di cacao",                
+        "src": "tiramisu"
+      }
+    ],
+    "ingredients": [
+      "uova", "mascarpone", "crema pasticciera", "cacao amaro"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "dolce", 
+        "recipe": "Apple crumble",                
+        "src": "apple-crumble"
+      }
+    ],
+    "ingredients": [
+      "lorem", "ipsum"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "dolce", 
+        "recipe": "Mousse di mela, crumble alle mandorle, aria di mela e gel di mela",                
+        "src": "mousse-mela"
+      }
+    ],
+    "ingredients": [
+      "mela", "mandorle", "latte"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "dolce", 
+        "recipe": "Torta caprese con gelato alla crema",                
+        "src": "torta-caprese"
+      }
+    ],
+    "ingredients": [
+      "latte", "crema", "pastasfoglia"
+    ]
+  },
+  {
+    "name_recipe": [
+      {
+        "label": "dolce", 
+        "recipe": "Panna cotta artigianale alla vaniglia con frutti di bosco",                
+        "src": "panna-cotta"
+      }
+    ],
+    "ingredients": [
+      "pana", "frutti di bosco"
+    ]
   }
 ]
